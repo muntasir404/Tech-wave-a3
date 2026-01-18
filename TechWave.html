@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave - Podcast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #FF5FC0, #8233FF);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(to right, #FF5FC0, #8233FF);
+        }
+        /* Figma accurate microphone background */
+        .mic-bg-gradient {
+            background: conic-gradient(from 180deg at 50% 50%, #FF5FC0 0deg, #8233FF 120deg, #FF5FC0 240deg, #8233FF 360deg);
+        }
+        body {
+            background-color: #0F0221; 
+            color: white;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="flex items-center justify-between px-6 py-4 lg:px-20 bg-[#0F0221] sticky top-0 z-50 border-b border-purple-900/30">
+        <div class="text-2xl font-bold">Tech<span class="gradient-text">Wave</span></div>
+        <ul class="hidden lg:flex space-x-8 text-gray-300">
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+            <li><a href="#" class="hover:text-white transition">Episodes</a></li>
+            <li><a href="#" class="hover:text-white transition">Host</a></li>
+        </ul>
+        <div class="hidden lg:block">
+            <button class="btn-gradient px-6 py-2 rounded-full font-semibold hover:opacity-90 transition transform hover:scale-105 flex items-center gap-2">
+                Subscribe <span class="text-lg">→</span>
+            </button>
+        </div>
+        <div class="lg:hidden">
+            <img src="./assets/hamburger-menu.png" alt="Menu" class="w-8 h-8 cursor-pointer">
+        </div>
+    </nav>
+
+    <section class="flex flex-col items-center text-center px-6 py-16 lg:py-24 relative">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="./assets/hero-bg.png" alt="" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative z-10 mb-8 w-48 h-48 lg:w-64 lg:h-64 mic-bg-gradient rounded-full flex items-center justify-center p-[3px] shadow-[0_0_50px_rgba(130,51,255,0.3)]">
+            <div class="bg-[#0F0221] w-full h-full rounded-full flex items-center justify-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-60" style="background: radial-gradient(circle, #FF5FC0 0%, #8233FF 100%);"></div>
+                <img src="./assets/microphone.png" alt="Mic" class="w-20 lg:w-28 relative z-10">
+            </div>
+            <span class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-[#00FF85] text-[#0F0221] text-[10px] px-2 py-0.5 rounded-md font-bold z-30 shadow-lg">NEW</span>
+        </div>
+
+        <h1 class="text-4xl lg:text-7xl font-extrabold mb-4 relative z-10">TechWave</h1>
+        <p class="max-w-xl text-gray-400 mb-8 relative z-10">Get insights from tech experts around the world, stay ahead in your career and personal growth.</p>
+        <div class="flex flex-col sm:flex-row gap-4 relative z-10">
+            <button class="btn-gradient px-8 py-3 rounded-full flex items-center justify-center gap-2 font-bold hover:scale-105 transition shadow-lg shadow-purple-500/20">
+                <img src="./assets/spotify.png" alt="Spotify" class="w-5"> Listen On Spotify
+            </button>
+            <button class="border border-purple-500 px-8 py-3 rounded-full font-bold hover:bg-purple-900 transition">Subscribe</button>
+        </div>
+    </section>
+
