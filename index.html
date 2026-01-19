@@ -19,7 +19,7 @@
         }
         /* Figma accurate microphone background */
         .mic-bg-gradient {
-            background: conic-gradient(from 180deg at 50% 50%, #FF5FC0 0deg, #8233FF 120deg, #FF5FC0 240deg, #8233FF 360deg);
+            background: 8px	Inside rgba(42, 24, 108, 1) 
         }
         body {
             background-color: #0F0221; 
@@ -54,21 +54,42 @@
         </div>
 
         <div class="relative z-10 mb-8 w-48 h-48 lg:w-64 lg:h-64 mic-bg-gradient rounded-full flex items-center justify-center p-[3px] shadow-[0_0_50px_rgba(130,51,255,0.3)]">
-            <div class="bg-[#0F0221] w-full h-full rounded-full flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 opacity-60" style="background: radial-gradient(circle, #FF5FC0 0%, #8233FF 100%);"></div>
-                <img src="./assets/microphone.png" alt="Mic" class="w-20 lg:w-28 relative z-10">
-            </div>
+           <div class="w-full h-full rounded-full flex items-center justify-center relative overflow-hidden" style=" box-sizing: border-box;  border: 8px solid rgba(42, 24, 108, 1); background: linear-gradient(47.64deg, rgb(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgb(145, 0, 248, 1) 100%);">
+    <img src="./assets/microphone.png" alt="Mic" class="w-20 lg:w-28 relative z-10">
+        </div>
             <span class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-[#00FF85] text-[#0F0221] text-[10px] px-2 py-0.5 rounded-md font-bold z-30 shadow-lg">NEW</span>
         </div>
 
         <h1 class="text-4xl lg:text-7xl font-extrabold mb-4 relative z-10">TechWave</h1>
         <p class="max-w-xl text-gray-400 mb-8 relative z-10">Get insights from tech experts around the world, stay ahead in your career and personal growth.</p>
+
         <div class="flex flex-col sm:flex-row gap-4 relative z-10">
-            <button class="btn-gradient px-8 py-3 rounded-full flex items-center justify-center gap-2 font-bold hover:scale-105 transition shadow-lg shadow-purple-500/20">
-                <img src="./assets/spotify.png" alt="Spotify" class="w-5"> Listen On Spotify
-            </button>
-            <button class="border border-purple-500 px-8 py-3 rounded-full font-bold hover:bg-purple-900 transition">Subscribe</button>
-        </div>
+    <button class="font-bold hover:scale-105 transition shadow-lg shadow-purple-500/20 text-white"
+            style=" width: 201px; height: 44px; display: flex; flex-direction: row;    justify-content: center;   align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10000px;  border: none; cursor: pointer;background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);">
+        <img src="./assets/spotify.png" alt="Spotify" class="w-5"> 
+        <span class="whitespace-nowrap">Listen On Spotify</span>
+    </button>
+
+<button class="font-bold hover:bg-[#00FF88]/10 transition text-white"
+    style="
+        width: 147px; 
+        height: 44px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        gap: 8px; 
+        padding:  12px 20px 12px 20px;
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 255, 136, 1);
+        border-radius: 10000px;
+        background: transparent;
+        cursor: pointer;
+        color: rgba(0, 255, 136, 1)
+    ">
+    <img src="./assets/message.png" alt="" class="w-5 h-5 object-contain">
+    <span>Subscribe</span>
+</button>
+</div>
     </section>
         <section class="px-6 lg:px-40 py-16 text-center">
         <h2 class="text-3xl font-bold mb-4">About The Podcast</h2>
@@ -141,34 +162,41 @@
         <h2 class="text-3xl font-bold mb-12 text-center">Featured Episodes</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-[#1A0B2E] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform">
-                <img src="./assets/episode1.png" alt="Episode 1" class="w-full h-48 object-cover">
+
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/mR6Ylqlmdfg?si=ZfXVvKpMG_uGzX7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 <div class="p-6">
-                    <h4 class="text-lg font-bold mb-2">The Future of AI in Everyday Life</h4>
-                    <p class="text-gray-400 text-sm mb-4">Exploring how artificial intelligence is transforming daily routines and what to expect in the near future.</p>
+                    <h4 class="text-lg font-bold mb-2">DIL Se AMEER Bano . | Best Bayan | Mufti Tariq Masood</h4>
+                    <p class="text-gray-400 text-sm mb-4">In this powerful bayan, Mufti Tariq Masood beautifully explains that true richness does not come from wealth, but from the heart.</p>
                     <div class="flex items-center justify-between text-gray-500 text-xs">
-                        <span>42 min</span>
+                        <span>18.44 min</span>
                         <span>🎧 Listen</span>
                     </div>
                 </div>
             </div>
             <div class="bg-[#1A0B2E] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform">
-                <img src="./assets/episode2.png" alt="Episode 2" class="w-full h-48 object-cover">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0gJBIBbr7gM?si=_MHg543JSJD_vaWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 <div class="p-6">
-                    <h4 class="text-lg font-bold mb-2">Building Better Habits for Remote Work</h4>
-                    <p class="text-gray-400 text-sm mb-4">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                    <h4 class="text-lg font-bold mb-2">Allah Ki Planning | TRUST ALLAH`S Plan | Mufti Tariq Masood</h4>
+                    <p class="text-gray-400 text-sm mb-4">A powerful reminder for anyone struggling with difficulties, doubts, or waiting for Allah's blessings.</p>
                     <div class="flex items-center justify-between text-gray-500 text-xs">
-                        <span>55 min</span>
+                        <span>17.27 min</span>
                         <span>🎧 Listen</span>
                     </div>
                 </div>
             </div>
             <div class="bg-[#1A0B2E] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform">
-                <img src="./assets/episode3.png" alt="Episode 3" class="w-full h-48 object-cover">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9MLvBb1_QjA?si=2VlJr9GxWOPFzS7f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 <div class="p-6">
-                    <h4 class="text-lg font-bold mb-2">Career Growth in Tech: A Roadmap</h4>
-                    <p class="text-gray-400 text-sm mb-4">Expert advice on navigating your tech career from junior developer to senior leader.</p>
+                    <h4 class="text-lg font-bold mb-2">Aisa Tawakkul ALLAH Ko Pasand Nahi | Mufti Tariq Masood</h4>
+                    <p class="text-gray-400 text-sm mb-4"> Learn the difference between true reliance on Allah.Understand how Islam teaches us to balance effort (عمل) with trust(tawakkul).</p>
                     <div class="flex items-center justify-between text-gray-500 text-xs">
-                        <span>50 min</span>
+                        <span>24.02 min</span>
                         <span>🎧 Listen</span>
                     </div>
                 </div>
